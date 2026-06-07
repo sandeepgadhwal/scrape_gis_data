@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scrape-lib"
+version = "0.1.0"
+description = "Reusable scraping utilities for GIS data collection"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/scrape_lib"]
+
